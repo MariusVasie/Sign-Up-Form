@@ -55,7 +55,7 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 30%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #00000080;
 }
 .logo {
     max-width: 100px;
@@ -73,7 +73,7 @@ body {
         padding-right:0.5rem;
     }
     a:hover {
-        color: rgb(218, 75, 75);
+        color: #da4b4b;
     }
 }
 
@@ -112,6 +112,20 @@ body {
     padding: 3rem;
 }
 
+.login-container {
+    padding: 3rem;
+
+    a {
+        color: #596D48;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #3f4d32;
+    }
+}
+
 .form-title {
     width: 100%;
     margin-bottom: 1rem;
@@ -147,6 +161,34 @@ input {
     width: 70%;
     height: 2rem;
     padding: 0.3rem;
-    border: solid 1px #e0e0e0;
+    border: solid 1px #E5E7EB;
     border-radius: 0.25rem;
-  }
+}
+
+input:invalid {
+    border-color: #ce1b1b;
+}
+
+input:focus, input:focus-visible {
+    border: solid 1px #1353d4;
+    box-shadow: 0 3px 5px 1px #d9d7d7;
+    outline: #1353d4;
+}
+
+button {
+    appearance: none;
+    padding: 15px 45px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #596D48;
+    color: #fff;
+    border: none;
+    box-shadow: 2px 2px 3px 1px #d9d7d7;
+    border-radius: 0.5rem;
+}
+
+button:hover {
+    cursor:pointer;
+    background-color: #3f4d32;
+}
